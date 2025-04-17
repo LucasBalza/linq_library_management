@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Library>
+  <Authors>
+    <Author>
+      <Id>1</Id>
+      <Name>Victor Hugo</Name>
+      <Nationality>Française</Nationality>
+      <BirthDate>1802-02-26</BirthDate>
+    </Author>
+    <Author>
+      <Id>2</Id>
+      <Name>Jules Verne</Name>
+      <Nationality>Française</Nationality>
+      <BirthDate>1828-02-08</BirthDate>
+    </Author>
+    <Author>
+      <Id>3</Id>
+      <Name>Agatha Christie</Name>
+      <Nationality>Britannique</Nationality>
+      <BirthDate>1890-09-15</BirthDate>
+    </Author>
+    <Author>
+      <Id>4</Id>
+      <Name>George Orwell</Name>
+      <Nationality>Britannique</Nationality>
+      <BirthDate>1903-06-25</BirthDate>
+    </Author>
+    <Author>
+      <Id>5</Id>
+      <Name>J.K. Rowling</Name>
+      <Nationality>Britannique</Nationality>
+      <BirthDate>1965-07-31</BirthDate>
+    </Author>
+    <Author>
+      <Id>6</Id>
+      <Name>Albert Camus</Name>
+      <Nationality>Française</Nationality>
+      <BirthDate>1913-11-07</BirthDate>
+    </Author>
+    <Author>
+      <Id>7</Id>
+      <Name>Marcel Proust</Name>
+      <Nationality>Française</Nationality>
+      <BirthDate>1871-07-10</BirthDate>
+    </Author>
+    <Author>
+      <Id>8</Id>
+      <Name>Gustave Flaubert</Name>
+      <Nationality>Française</Nationality>
+      <BirthDate>1821-12-12</BirthDate>
+    </Author>
+    <Author>
+      <Id>9</Id>
+      <Name>Émile Zola</Name>
+      <Nationality>Française</Nationality>
+      <BirthDate>1840-04-02</BirthDate>
+    </Author>
+    <Author>
+      <Id>10</Id>
+      <Name>Alexandre Dumas</Name>
+      <Nationality>Française</Nationality>
+      <BirthDate>1802-07-24</BirthDate>
+    </Author>
+  </Authors>
+  <Books>
+    <Book>
+      <Id>1</Id>
+      <Title>Les Misérables</Title>
+      <AuthorId>1</AuthorId>
+      <PublicationDate>1862-01-01</PublicationDate>
+      <ISBN>978-2070409228</ISBN>
+      <Category>Roman</Category>
+      <PageCount>1462</PageCount>
+    </Book>
+    <Book>
+      <Id>2</Id>
+      <Title>Notre-Dame de Paris</Title>
+      <AuthorId>1</AuthorId>
+      <PublicationDate>1831-01-01</PublicationDate>
+      <ISBN>978-2070409229</ISBN>
+      <Category>Roman</Category>
+      <PageCount>940</PageCount>
+    </Book>
+    <Book>
+      <Id>3</Id>
+      <Title>Vingt mille lieues sous les mers</Title>
+      <AuthorId>2</AuthorId>
+      <PublicationDate>1870-01-01</PublicationDate>
+      <ISBN>978-2070409230</ISBN>
+      <Category>Science-fiction</Category>
+      <PageCount>600</PageCount>
+    </Book>
+    <Book>
+      <Id>4</Id>
+      <Title>Le Tour du monde en quatre-vingts jours</Title>
+      <AuthorId>2</AuthorId>
+      <PublicationDate>1873-01-01</PublicationDate>
+      <ISBN>978-2070409231</ISBN>
+      <Category>Aventure</Category>
+      <PageCount>300</PageCount>
+    </Book>
+    <Book>
+      <Id>5</Id>
+      <Title>Le Crime de l'Orient-Express</Title>
+      <AuthorId>3</AuthorId>
+      <PublicationDate>1934-01-01</PublicationDate>
+      <ISBN>978-2070409232</ISBN>
+      <Category>Policier</Category>
+      <PageCount>250</PageCount>
+    </Book>
+    <Book>
+      <Id>6</Id>
+      <Title>Dix petits nègres</Title>
+      <AuthorId>3</AuthorId>
+      <PublicationDate>1939-01-01</PublicationDate>
+      <ISBN>978-2070409233</ISBN>
+      <Category>Policier</Category>
+      <PageCount>200</PageCount>
+    </Book>
+    <Book>
+      <Id>7</Id>
+      <Title>1984</Title>
+      <AuthorId>4</AuthorId>
+      <PublicationDate>1949-06-08</PublicationDate>
+      <ISBN>978-0451524935</ISBN>
+      <Category>Dystopie</Category>
+      <PageCount>328</PageCount>
+    </Book>
+    <Book>
+      <Id>8</Id>
+      <Title>La Ferme des animaux</Title>
+      <AuthorId>4</AuthorId>
+      <PublicationDate>1945-08-17</PublicationDate>
+      <ISBN>978-0451526342</ISBN>
+      <Category>Satire</Category>
+      <PageCount>112</PageCount>
+    </Book>
+    <Book>
+      <Id>9</Id>
+      <Title>Harry Potter à l'école des sorciers</Title>
+      <AuthorId>5</AuthorId>
+      <PublicationDate>1997-06-26</PublicationDate>
+      <ISBN>978-2070643028</ISBN>
+      <Category>Fantaisie</Category>
+      <PageCount>223</PageCount>
+    </Book>
+    <Book>
+      <Id>10</Id>
+      <Title>L'Étranger</Title>
+      <AuthorId>6</AuthorId>
+      <PublicationDate>1942-01-01</PublicationDate>
+      <ISBN>978-2070360024</ISBN>
+      <Category>Roman</Category>
+      <PageCount>159</PageCount>
+    </Book>
+  </Books>
+  <Borrowers>
+    <Borrower>
+      <Id>1</Id>
+      <Name>Jean Dupont</Name>
+      <Email>jean.dupont@email.com</Email>
+      <Phone>0123456789</Phone>
+    </Borrower>
+    <Borrower>
+      <Id>2</Id>
+      <Name>Marie Martin</Name>
+      <Email>marie.martin@email.com</Email>
+      <Phone>0987654321</Phone>
+    </Borrower>
+    <Borrower>
+      <Id>3</Id>
+      <Name>Pierre Durand</Name>
+      <Email>pierre.durand@email.com</Email>
+      <Phone>0234567890</Phone>
+    </Borrower>
+    <Borrower>
+      <Id>4</Id>
+      <Name>Sophie Bernard</Name>
+      <Email>sophie.bernard@email.com</Email>
+      <Phone>0345678901</Phone>
+    </Borrower>
+    <Borrower>
+      <Id>5</Id>
+      <Name>Thomas Petit</Name>
+      <Email>thomas.petit@email.com</Email>
+      <Phone>0456789012</Phone>
+    </Borrower>
+    <Borrower>
+      <Id>6</Id>
+      <Name>Julie Moreau</Name>
+      <Email>julie.moreau@email.com</Email>
+      <Phone>0567890123</Phone>
+    </Borrower>
+    <Borrower>
+      <Id>7</Id>
+      <Name>Lucas Dubois</Name>
+      <Email>lucas.dubois@email.com</Email>
+      <Phone>0678901234</Phone>
+    </Borrower>
+    <Borrower>
+      <Id>8</Id>
+      <Name>Emma Laurent</Name>
+      <Email>emma.laurent@email.com</Email>
+      <Phone>0789012345</Phone>
+    </Borrower>
+    <Borrower>
+      <Id>9</Id>
+      <Name>Hugo Simon</Name>
+      <Email>hugo.simon@email.com</Email>
+      <Phone>0890123456</Phone>
+    </Borrower>
+    <Borrower>
+      <Id>10</Id>
+      <Name>Léa Michel</Name>
+      <Email>lea.michel@email.com</Email>
+      <Phone>0901234567</Phone>
+    </Borrower>
+  </Borrowers>
+  <Loans>
+    <Loan>
+      <Id>1</Id>
+      <BookId>1</BookId>
+      <BorrowerId>1</BorrowerId>
+      <LoanDate>2024-01-01</LoanDate>
+      <DueDate>2024-01-15</DueDate>
+      <ReturnDate>2024-01-14</ReturnDate>
+    </Loan>
+    <Loan>
+      <Id>2</Id>
+      <BookId>3</BookId>
+      <BorrowerId>2</BorrowerId>
+      <LoanDate>2024-02-01</LoanDate>
+      <DueDate>2024-02-15</DueDate>
+      <ReturnDate>2024-02-16</ReturnDate>
+    </Loan>
+    <Loan>
+      <Id>3</Id>
+      <BookId>5</BookId>
+      <BorrowerId>3</BorrowerId>
+      <LoanDate>2024-03-01</LoanDate>
+      <DueDate>2024-03-15</DueDate>
+      <ReturnDate>2024-03-14</ReturnDate>
+    </Loan>
+    <Loan>
+      <Id>4</Id>
+      <BookId>7</BookId>
+      <BorrowerId>4</BorrowerId>
+      <LoanDate>2024-04-01</LoanDate>
+      <DueDate>2024-04-15</DueDate>
+      <ReturnDate>2024-04-14</ReturnDate>
+    </Loan>
+    <Loan>
+      <Id>5</Id>
+      <BookId>9</BookId>
+      <BorrowerId>5</BorrowerId>
+      <LoanDate>2024-05-01</LoanDate>
+      <DueDate>2024-05-15</DueDate>
+      <ReturnDate>2024-05-14</ReturnDate>
+    </Loan>
+    <Loan>
+      <Id>6</Id>
+      <BookId>2</BookId>
+      <BorrowerId>6</BorrowerId>
+      <LoanDate>2024-06-01</LoanDate>
+      <DueDate>2024-06-15</DueDate>
+      <ReturnDate>2024-06-14</ReturnDate>
+    </Loan>
+    <Loan>
+      <Id>7</Id>
+      <BookId>4</BookId>
+      <BorrowerId>7</BorrowerId>
+      <LoanDate>2024-07-01</LoanDate>
+      <DueDate>2024-07-15</DueDate>
+      <ReturnDate>2024-07-14</ReturnDate>
+    </Loan>
+    <Loan>
+      <Id>8</Id>
+      <BookId>6</BookId>
+      <BorrowerId>8</BorrowerId>
+      <LoanDate>2025-04-01</LoanDate>
+      <DueDate>2025-05-01</DueDate>
+      <ReturnDate></ReturnDate>
+    </Loan>
+    <Loan>
+      <Id>9</Id>
+      <BookId>8</BookId>
+      <BorrowerId>9</BorrowerId>
+      <LoanDate>2025-04-15</LoanDate>
+      <DueDate>2025-05-15</DueDate>
+      <ReturnDate></ReturnDate>
+    </Loan>
+  </Loans>
+</Library> 
