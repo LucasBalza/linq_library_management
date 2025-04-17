@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
 namespace m1il_lucas_balza.Models
 {
     /// <summary>

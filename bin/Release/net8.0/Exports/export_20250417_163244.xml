@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Data>
+  <Title>Export des livres par catégorie</Title>
+  <Items>
+    <Item>
+      <Id>4</Id>
+      <Title>Le Tour du monde en quatre-vingts jours</Title>
+      <Author>Jules Verne (Française)</Author>
+      <PublicationDate>1873-01-01T00:00:00</PublicationDate>
+      <ISBN>978-2070409231</ISBN>
+      <Category>Aventure</Category>
+      <PageCount>300</PageCount>
+    </Item>
+    <Item>
+      <Id>7</Id>
+      <Title>1984</Title>
+      <Author>George Orwell (Britannique)</Author>
+      <PublicationDate>1949-06-08T00:00:00</PublicationDate>
+      <ISBN>978-0451524935</ISBN>
+      <Category>Dystopie</Category>
+      <PageCount>328</PageCount>
+    </Item>
+    <Item>
+      <Id>9</Id>
+      <Title>Harry Potter à l'école des sorciers</Title>
+      <Author>J.K. Rowling (Britannique)</Author>
+      <PublicationDate>1997-06-26T00:00:00</PublicationDate>
+      <ISBN>978-2070643028</ISBN>
+      <Category>Fantaisie</Category>
+      <PageCount>223</PageCount>
+    </Item>
+    <Item>
+      <Id>5</Id>
+      <Title>Le Crime de l'Orient-Express</Title>
+      <Author>Agatha Christie (Britannique)</Author>
+      <PublicationDate>1934-01-01T00:00:00</PublicationDate>
+      <ISBN>978-2070409232</ISBN>
+      <Category>Policier</Category>
+      <PageCount>250</PageCount>
+    </Item>
+    <Item>
+      <Id>6</Id>
+      <Title>Dix petits nègres</Title>
+      <Author>Agatha Christie (Britannique)</Author>
+      <PublicationDate>1939-01-01T00:00:00</PublicationDate>
+      <ISBN>978-2070409233</ISBN>
+      <Category>Policier</Category>
+      <PageCount>200</PageCount>
+    </Item>
+    <Item>
+      <Id>1</Id>
+      <Title>Les Misérables</Title>
+      <Author>Victor Hugo (Française)</Author>
+      <PublicationDate>1862-01-01T00:00:00</PublicationDate>
+      <ISBN>978-2070409228</ISBN>
+      <Category>Roman</Category>
+      <PageCount>1462</PageCount>
+    </Item>
+    <Item>
+      <Id>2</Id>
+      <Title>Notre-Dame de Paris</Title>
+      <Author>Victor Hugo (Française)</Author>
+      <PublicationDate>1831-01-01T00:00:00</PublicationDate>
+      <ISBN>978-2070409229</ISBN>
+      <Category>Roman</Category>
+      <PageCount>940</PageCount>
+    </Item>
+    <Item>
+      <Id>10</Id>
+      <Title>L'Étranger</Title>
+      <Author>Albert Camus (Française)</Author>
+      <PublicationDate>1942-01-01T00:00:00</PublicationDate>
+      <ISBN>978-2070360024</ISBN>
+      <Category>Roman</Category>
+      <PageCount>159</PageCount>
+    </Item>
+    <Item>
+      <Id>8</Id>
+      <Title>La Ferme des animaux</Title>
+      <Author>George Orwell (Britannique)</Author>
+      <PublicationDate>1945-08-17T00:00:00</PublicationDate>
+      <ISBN>978-0451526342</ISBN>
+      <Category>Satire</Category>
+      <PageCount>112</PageCount>
+    </Item>
+    <Item>
+      <Id>3</Id>
+      <Title>Vingt mille lieues sous les mers</Title>
+      <Author>Jules Verne (Française)</Author>
+      <PublicationDate>1870-01-01T00:00:00</PublicationDate>
+      <ISBN>978-2070409230</ISBN>
+      <Category>Science-fiction</Category>
+      <PageCount>600</PageCount>
+    </Item>
+  </Items>
+</Data>

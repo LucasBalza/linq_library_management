@@ -1,5 +1,3 @@
-using System;
-
 namespace m1il_lucas_balza.Models
 {
     public class Author

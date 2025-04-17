@@ -240,9 +240,12 @@ namespace m1il_lucas_balza
                 return;
             }
 
+            int counter = 1;
+
             foreach (var book in availableBooks)
             {
-                Console.WriteLine($"- {book.Title} par {book.Author.Name}");
+                Console.WriteLine($"{counter} - {book.Title} par {book.Author.Name}");
+                counter++;
             }
 
             ShowExportMenu(availableBooks, "Export des livres disponibles");
@@ -263,9 +266,12 @@ namespace m1il_lucas_balza
                 return;
             }
 
+            int counter = 1;
+
             foreach (var book in borrowedBooks)
             {
-                Console.WriteLine($"- {book.Title} par {book.Author.Name}");
+                Console.WriteLine($"{counter} - {book.Title} par {book.Author.Name}");
+                counter ++;
             }
 
             ShowExportMenu(borrowedBooks, "Export des livres empruntés");
@@ -286,9 +292,12 @@ namespace m1il_lucas_balza
                 return;
             }
 
+            int counter = 1;
+
             foreach (var book in overdueBooks)
             {
-                Console.WriteLine($"- {book.Title} par {book.Author.Name}");
+                Console.WriteLine($"{counter} - {book.Title} par {book.Author.Name}");
+                counter ++;
             }
 
             ShowExportMenu(overdueBooks, "Export des livres en retard");
@@ -313,10 +322,12 @@ namespace m1il_lucas_balza
 
             foreach (var group in booksByAuthor)
             {
+                int counter = 1;
                 Console.WriteLine($"\n{group.Key}:");
                 foreach (var book in group)
                 {
-                    Console.WriteLine($"  - {book.Title} ({book.Category})");
+                    Console.WriteLine($"{counter} - {book.Title} ({book.Category})");
+                    counter ++;
                 }
             }
 
@@ -342,10 +353,12 @@ namespace m1il_lucas_balza
 
             foreach (var group in booksByCategory)
             {
+                int counter = 1;
                 Console.WriteLine($"\n{group.Key}:");
                 foreach (var book in group)
                 {
-                    Console.WriteLine($"  - {book.Title} par {book.Author.Name}");
+                    Console.WriteLine($"{counter} - {book.Title} par {book.Author.Name}");
+                    counter++;
                 }
             }
 
@@ -368,9 +381,12 @@ namespace m1il_lucas_balza
                 return;
             }
 
+            int counter = 1; 
+
             foreach (var borrower in activeBorrowers)
             {
-                Console.WriteLine($"- {borrower.Name} ({borrower.Email})");
+                Console.WriteLine($"{counter} - {borrower.Name} ({borrower.Email})");
+                counter ++;
             }
 
             ShowExportMenu(activeBorrowers, "Export des emprunteurs");
