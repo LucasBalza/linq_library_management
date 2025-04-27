@@ -60,6 +60,9 @@ Pour chaque affichage de données, vous avez la possibilité d'exporter les rés
 2. Format JSON
 
 Ou bien de retourner au menu principal avec le troisième sous-menu.
+
+Vous serez ensuite inviter à sélectionner les champs que vous désirez exporter.
+
 Les fichiers extraits sont localisés dans le répertoire `bin > Debug > net8.0 > Exports`.
 
 ## Technologies Utilisées
