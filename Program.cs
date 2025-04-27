@@ -137,34 +137,108 @@ namespace m1il_lucas_balza
         }
 
         /// <summary>
-        /// Affiche le menu d'export pour un ensemble d'éléments.
+        /// Permet à l'utilisateur de sélectionner les champs à exporter.
         /// </summary>
         /// <typeparam name="T">Type des éléments à exporter.</typeparam>
         /// <param name="items">Collection d'éléments à exporter.</param>
-        /// <param name="title">Titre de l'export.</param>
-        private static void ShowExportMenu<T>(IEnumerable<T> items, string title)
+        /// <returns>Liste des noms des propriétés sélectionnées.</returns>
+        private static List<string> SelectFieldsToExport<T>(IEnumerable<T> items)
         {
-            Console.WriteLine($"\n=== {title} ===");
-            Console.WriteLine("1. Exporter en XML");
-            Console.WriteLine("2. Exporter en JSON");
-            Console.WriteLine("3. Revenir au menu principal");
-            Console.Write("\nVotre choix : ");
+            var properties = typeof(T).GetProperties();
+            Console.WriteLine("\nSélectionnez les champs à exporter :");
+            
+            for (int i = 0; i < properties.Length; i++)
+            {
+                Console.WriteLine($"{i + 1}. {properties[i].Name}");
+            }
+            
+            Console.WriteLine("\nEntrez les numéros des champs séparés par des virgules (ex: 1,3,5)");
+            Console.WriteLine("Appuyez sur Entrée pour exporter tous les champs");
+            
+            var input = Console.ReadLine();
+            if (string.IsNullOrWhiteSpace(input))
+            {
+                return properties.Select(p => p.Name).ToList();
+            }
 
-            string? input = Console.ReadLine();
-            string choice = input?.ToUpper() ?? string.Empty;
+            try
+            {
+                var selectedIndices = input.Split(',')
+                    .Select(s => int.Parse(s.Trim()))
+                    .Where(i => i > 0 && i <= properties.Length)
+                    .Distinct()
+                    .ToList();
+
+                if (!selectedIndices.Any())
+                {
+                    Console.WriteLine("Aucun champ valide sélectionné. Export de tous les champs.");
+                    return properties.Select(p => p.Name).ToList();
+                }
+
+                return selectedIndices
+                    .Select(index => properties[index - 1].Name)
+                    .ToList();
+            }
+            catch
+            {
+                Console.WriteLine("Format invalide. Export de tous les champs.");
+                return properties.Select(p => p.Name).ToList();
+            }
+        }
+
+        /// <summary>
+        /// Affiche le menu d'export pour une collection d'éléments.
+        /// </summary>
+        /// <typeparam name="T">Type des éléments à exporter.</typeparam>
+        /// <param name="items">Collection d'éléments à exporter.</param>
+        /// <param name="exportType">Type d'export (utilisé pour le nom du fichier).</param>
+        private static void ShowExportMenu<T>(IEnumerable<T> items, string exportType)
+        {
+            if (!items.Any())
+            {
+                Console.WriteLine("Aucune donnée à exporter.");
+                Pause();
+                return;
+            }
+
+            Console.WriteLine("\nChoisissez le format d'export :");
+            Console.WriteLine("1. XML");
+            Console.WriteLine("2. JSON");
+            Console.WriteLine("3. Retour au menu principal");
+
+            var choice = Console.ReadLine();
+
+            if (choice == "3")
+            {
+                return;
+            }
+
+            if (choice != "1" && choice != "2")
+            {
+                Console.WriteLine("Choix invalide.");
+                Pause();
+                return;
+            }
+
+            var selectedFields = SelectFieldsToExport(items);
+
+            var filteredData = items.Select(item => {
+                var result = new Dictionary<string, object>();
+                foreach (var field in selectedFields)
+                {
+                    var value = item.GetType().GetProperty(field)?.GetValue(item);
+                    result[field] = value;
+                }
+                return result;
+            });
 
             switch (choice)
             {
                 case "1":
-                    ExportToXml(items, title);
+                    ExportToXml(filteredData, exportType);
                     break;
                 case "2":
-                    ExportToJson(items, title);
-                    break;
-                case "3":
-                    return;
-                default:
-                    Console.WriteLine("Choix invalide.");
+                    ExportToJson(filteredData, exportType);
                     break;
             }
         }
@@ -406,10 +480,22 @@ namespace m1il_lucas_balza
                     new XElement("Data",
                         new XElement("Title", title),
                         new XElement("Items",
-                            items.Select(item => new XElement("Item",
-                                item.GetType().GetProperties()
-                                    .Select(p => new XElement(p.Name, p.GetValue(item)))
-                            ))
+                            items.Select(item => 
+                            {
+                                if (item is IDictionary<string, object> dict)
+                                {
+                                    return new XElement("Item",
+                                        dict.Select(kvp => new XElement(kvp.Key, kvp.Value))
+                                    );
+                                }
+                                else
+                                {
+                                    return new XElement("Item",
+                                        item.GetType().GetProperties()
+                                            .Select(p => new XElement(p.Name, p.GetValue(item)))
+                                    );
+                                }
+                            })
                         )
                     )
                 );

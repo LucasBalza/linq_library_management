@@ -41,7 +41,7 @@ Ce projet est une application de gestion de bibliothèque développée en C#. Il
 ## Utilisation
 
 ### Initialisation
-L'application charge automatiquement les données depuis le fichier XML situé dans le dossier `DataSource`.
+L'application charge automatiquement les données depuis le fichier XML situé dans le dossier `DataSource` au lancement du programme.
 
 ### Menu Principal
 1. Afficher tous les livres
@@ -60,6 +60,7 @@ Pour chaque affichage de données, vous avez la possibilité d'exporter les rés
 2. Format JSON
 
 Ou bien de retourner au menu principal avec le troisième sous-menu.
+Les fichiers extraits sont localisés dans le répertoire `bin > Debug > net8.0 > Exports`.
 
 ## Technologies Utilisées
 - C#
@@ -75,6 +76,8 @@ Ou bien de retourner au menu principal avec le troisième sous-menu.
 1. Cloner le dépôt
 2. Ouvrir la solution dans Visual Studio
 3. Compiler et exécuter le projet
+
+**Attention** : Une étape de nettoyage de la solution pourrait être nécessaire si la solution ne fonctionne pas comme prévu.
 
 ## Structure des Données
 
